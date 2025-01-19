@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://dark-modz.github.io/Monaco/Editor/index.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #181a1b;
+   --darkreader-neutral-text: #e8e6e3;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: #181a1b;
+}
+html, body {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+mark {
+    color: #e8e6e3;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+}</style>
+	<style type="text/css">
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+	</style><style class="darkreader darkreader--sync" media="screen"></style>
+	
+	<title></title>
+	
+
+<meta name="darkreader" content="fe50ff1134394b8e95bba2d10c2af720"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #684b00 !important;
+    border-color: #9e7e00 !important;
+    color: #d7d4cf !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #1b4958 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #0f3a47 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #1e2021 !important;
+}
+.tou-uknfeu {
+    background-color: #432c09 !important;
+}
+.tou-6i3zyv {
+    background-color: #245d70 !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}</style><script async="async" type="text/javascript" src="./editor_files/editor.main.js.download"></script><link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="./editor_files/editor.main.css"><style class="darkreader darkreader--sync" media="screen"></style><script async="async" type="text/javascript" src="./editor_files/editor.main.nls.js.download"></script><style type="text/css" media="screen" class="monaco-colors">.monaco-editor .minimap-slider, .monaco-editor .minimap-slider .minimap-slider-horizontal { background: rgba(121, 121, 121, 0.2); }
+.monaco-editor .minimap-slider:hover, .monaco-editor .minimap-slider:hover .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.35); }
+.monaco-editor .minimap-slider.active, .monaco-editor .minimap-slider.active .minimap-slider-horizontal { background: rgba(191, 191, 191, 0.2); }
+.monaco-editor .minimap-shadow-visible { box-shadow: #000000 -6px 0 6px -6px inset; }
+.monaco-editor .scroll-decoration { box-shadow: #000000 0 6px 6px -6px inset; }
+.monaco-editor .focused .selected-text { background-color: #264f78; }
+.monaco-editor .selected-text { background-color: #3a3d41; }
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input { background-color: #101010; }
+.monaco-editor, .monaco-editor .inputarea.ime-input { color: #d4d4d4; }
+.monaco-editor .margin { background-color: #101010; }
+.monaco-editor .rangeHighlight { background-color: rgba(255, 255, 255, 0.04); }
+.vs-whitespace { color: rgba(227, 228, 226, 0.16) !important; }
+.monaco-editor .view-overlays .current-line { border: 2px solid #282828; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #282828; }
+.monaco-editor .lines-content .cigr { box-shadow: 1px 0 0 0 #404040 inset; }
+.monaco-editor .lines-content .cigra { box-shadow: 1px 0 0 0 #707070 inset; }
+.monaco-editor .line-numbers { color: #5a5a5a; }
+.monaco-editor .view-ruler { box-shadow: 1px 0 0 0 #5a5a5a inset; }
+.monaco-editor .cursor { background-color: #aeafad; border-color: #aeafad; color: #515052; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23ea4646'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%234d9e4d'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23008000'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22rgba(238%2C%20238%2C%20238%2C%200.7)%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.vs .valueSetReplacement { outline: solid 2px #888888; }
+.monaco-diff-editor .diff-review-line-number { color: #5a5a5a; }
+.monaco-diff-editor .diff-review-shadow { box-shadow: #000000 0 -6px 6px -6px inset; }
+.monaco-editor .line-insert, .monaco-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-diff-editor .line-insert, .monaco-diff-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .inline-added-margin-view-zone { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .line-delete, .monaco-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor .line-delete, .monaco-diff-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-editor .inline-deleted-margin-view-zone { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor.side-by-side .editor.modified { box-shadow: -6px 0 5px -5px #000000; }
+.monaco-editor .bracket-match { background-color: rgba(0, 100, 0, 0.1); }
+.monaco-editor .bracket-match { border: 1px solid #888888; }
+.monaco-editor .codelens-decoration { color: #999999; }
+.monaco-editor .codelens-decoration > a:hover { color: #4e94ce !important; }
+.monaco-editor .findOptionsWidget { background-color: #2d2d30; }
+.monaco-editor .findOptionsWidget { box-shadow: 0 2px 8px #000000; }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #515c6a; }
+.monaco-editor .findScope { background-color: rgba(58, 61, 65, 0.4); }
+.monaco-editor .find-widget { background-color: #2d2d30; }
+.monaco-editor .find-widget { box-shadow: 0 2px 8px #000000; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #f48771; }
+.monaco-editor .find-widget .monaco-sash { background-color: #454545; width: 3px !important; margin-left: -4px;}
+.monaco-editor .hoverHighlight { background-color: rgba(38, 79, 120, 0.25); }
+.monaco-editor .monaco-editor-hover { background-color: #2d2d30; }
+.monaco-editor .monaco-editor-hover { border: 1px solid #454545; }
+.monaco-editor .monaco-editor-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-editor-hover a { color: #4080d0; }
+.monaco-editor .monaco-editor-hover code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor .detected-link-active { color: #4e94ce !important; }
+.monaco-editor .monaco-editor-overlaymessage .anchor { border-top-color: #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { border: 1px solid #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { background-color: #063b49; }
+.monaco-editor .parameter-hints-widget { border: 1px solid #454545; }
+.monaco-editor .parameter-hints-widget.multiple .body { border-left: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .parameter-hints-widget .signature.has-docs { border-bottom: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .parameter-hints-widget { background-color: #2d2d30; }
+.monaco-editor .parameter-hints-widget a { color: #4080d0; }
+.monaco-editor .parameter-hints-widget code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor .suggest-widget .monaco-list .monaco-list-row .monaco-highlighted-label .highlight { color: #0097fb; }
+.monaco-editor .suggest-widget { color: #d4d4d4; }
+.monaco-editor .suggest-widget a { color: #4080d0; }
+.monaco-editor .suggest-widget code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor .focused .selectionHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.07); }
+.monaco-editor .wordHighlight { background-color: rgba(87, 87, 87, 0.72); }
+.monaco-editor .wordHighlightStrong { background-color: rgba(0, 73, 114, 0.72); }
+.monaco-editor .accessibilityHelpWidget { background-color: #2d2d30; }
+.monaco-editor .accessibilityHelpWidget { box-shadow: 0 2px 8px #000000; }
+.monaco-editor .tokens-inspect-widget { border: 1px solid #454545; }
+.monaco-editor .tokens-inspect-widget .tokens-inspect-separator { background-color: #454545; }
+.monaco-editor .tokens-inspect-widget { background-color: #2d2d30; }
+.monaco-editor .reference-zone-widget .ref-tree .referenceMatch { background-color: rgba(234, 92, 0, 0.3); }
+.monaco-editor .reference-zone-widget .preview .reference-decoration { background-color: rgba(255, 143, 0, 0.6); }
+.monaco-editor .reference-zone-widget .ref-tree { background-color: #252526; }
+.monaco-editor .reference-zone-widget .ref-tree { color: #bbbbbb; }
+.monaco-editor .reference-zone-widget .ref-tree .reference-file { color: #ffffff; }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-tree.focused .monaco-tree-rows > .monaco-tree-row.selected:not(.highlighted) { background-color: rgba(51, 153, 255, 0.2); }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-tree.focused .monaco-tree-rows > .monaco-tree-row.selected:not(.highlighted) { color: #ffffff !important; }
+.monaco-editor .reference-zone-widget .preview .monaco-editor .monaco-editor-background,.monaco-editor .reference-zone-widget .preview .monaco-editor .inputarea.ime-input {	background-color: #001f33;}
+.monaco-editor .reference-zone-widget .preview .monaco-editor .margin {	background-color: #001f33;}
+.monaco-editor .goto-definition-link { color: #4e94ce !important; }
+
+.mtk1 { color: #d4d4d4; }
+.mtk2 { color: #1e1e1e; }
+.mtk3 { color: #ffa1dc; }
+.mtk4 { color: #cc6666; }
+.mtk5 { color: #9cdcfe; }
+.mtk6 { color: #ce9178; }
+.mtk7 { color: #b5cea8; }
+.mtk8 { color: #608b4e; }
+.mtk9 { color: #999999; }
+.mtk10 { color: #569cd6; }
+.mtk11 { color: #dcdcdc; }
+.mtk12 { color: #808080; }
+.mtk13 { color: #6699cc; }
+.mtk14 { color: #f44747; }
+.mtk15 { color: #cc99cc; }
+.mtk16 { color: #c586c0; }
+.mtk17 { color: #a79873; }
+.mtk18 { color: #dd6a6f; }
+.mtk19 { color: #f99157; }
+.mtk20 { color: #5bb498; }
+.mtk21 { color: #909090; }
+.mtk22 { color: #778899; }
+.mtk23 { color: #ff00ff; }
+.mtk24 { color: #b46695; }
+.mtk25 { color: #99cc99; }
+.mtk26 { color: #ff0000; }
+.mtk27 { color: #4f76ac; }
+.mtk28 { color: #3dc9b0; }
+.mtk29 { color: #74b0df; }
+.mtk30 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; }</style><style class="darkreader darkreader--sync" media="screen"></style><style type="text/css" media="screen"></style><style class="darkreader darkreader--sync" media="screen"></style><script async="async" type="text/javascript" src="./editor_files/lua.js.download"></script></head>
+
+<body>
+	<div id="container" style="width:100%;height:100%;" data-keybinding-context="1" data-mode-id="lua"><div class="monaco-editor vs-dark" data-uri="inmemory://model/1" style="width: 1672px; height: 908px;"><div data-mprt="3" class="overflow-guard" style="width: 1672px; height: 908px;"><div class="margin" role="presentation" aria-hidden="true" style="position: absolute; will-change: transform; top: 0px; height: 908px; width: 64px;"><div class="glyph-margin" style="left: 0px; width: 0px; height: 908px;"></div><div class="margin-view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="margin-view-overlays" role="presentation" aria-hidden="true" style="position: absolute; width: 64px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; letter-spacing: 0px; height: 908px;"><div style="position:absolute;top:0px;width:100%;height:19px;"><div class="current-line" style="width:64px; height:19px;"></div><div class="line-numbers" style="left:0px;width:38px;">1</div></div></div></div><div class="monaco-scrollable-element editor-scrollable vs-dark" role="presentation" data-mprt="5" style="position: absolute; overflow: hidden; left: 64px; width: 1608px; height: 908px;"><div class="lines-content monaco-editor-background" style="position: absolute; overflow: hidden; width: 1e+06px; height: 1e+06px; will-change: transform; top: 0px; left: 0px;"><div class="view-overlays" role="presentation" aria-hidden="true" style="position: absolute; height: 0px; width: 1608px;"><div style="position:absolute;top:0px;width:100%;height:19px;"><div class="current-line" style="width:1608px; height:19px;"></div></div></div><div role="presentation" aria-hidden="true" class="view-rulers"></div><div class="view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="view-lines" role="presentation" aria-hidden="true" data-mprt="7" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; letter-spacing: 0px; width: 1608px; height: 908px;"><div style="top:0px;height:19px;" class="view-line"><span><span>&nbsp;</span></span></div></div><div data-mprt="1" class="contentWidgets" style="position: absolute; top: 0px;"><div class="lightbulb-glyph" title="Show Fixes (Ctrl+.)" widgetid="LightBulbWidget" style="position: absolute; visibility: hidden; max-width: 1608px;"></div></div><div role="presentation" aria-hidden="true" class="cursors-layer cursor-line-style cursor-solid"><div class="cursor " style="height: 19px; top: 0px; left: 0px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; letter-spacing: 0px; display: block; visibility: hidden; width: 2px;"></div></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute; width: 1594px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; will-change: transform; width: 1594px;"></div></div><canvas class="decorationsOverviewRuler" aria-hidden="true" width="14" height="886" style="position: absolute; will-change: transform; top: 11px; right: 0px; width: 14px; height: 886px;"></canvas><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute; width: 14px; height: 908px; right: 0px; top: 0px;"><div class="arrow-background" style="position: absolute; width: 14px; height: 11px; top: 0px; left: 0px;"></div><div class="up-arrow" style="position: absolute; width: 11px; height: 11px; top: 0px; left: 1.5px;"></div><div class="arrow-background" style="position: absolute; width: 14px; height: 11px; left: 0px; bottom: 0px;"></div><div class="down-arrow" style="position: absolute; width: 11px; height: 11px; left: 1.5px; bottom: 0px;"></div><div class="slider" style="position: absolute; top: 11px; left: 0px; width: 14px; will-change: transform; height: 886px;"></div></div></div><div role="presentation" aria-hidden="true" style="width: 1672px;"></div><textarea data-mprt="6" class="inputarea" wrap="off" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" aria-label="Editor content;Press Alt+F1 for Accessibility Options." role="textbox" aria-multiline="true" aria-haspopup="false" aria-autocomplete="both" style="font-size: 1px; line-height: 19px; top: 0px; left: 64px; width: 1px; height: 1px;"></textarea><div style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;"></div><div data-mprt="4" class="overlayWidgets" style="width: 1672px;"><div class="accessibilityHelpWidget" role="dialog" aria-hidden="true" widgetid="editor.contrib.accessibilityHelpWidget" style="display: none; position: absolute;"><div role="document"></div></div></div><div data-mprt="8" class="minimap slider-mouseover" role="presentation" aria-hidden="true" style="position: absolute; left: 0px; width: 0px; height: 908px;"><div class="minimap-shadow-hidden" style="height: 908px;"></div><canvas width="1" height="908" style="position: absolute; left: 0px; width: 1px; height: 908px;"></canvas><div class="minimap-slider" style="position: absolute; will-change: transform; width: 0px;"><div class="minimap-slider-horizontal" style="position: absolute; width: 0px; height: 0px;"></div></div></div></div><div data-mprt="2" class="overflowingContentWidgets"><div class="monaco-editor rename-box" widgetid="__renameInputWidget" style="height: 19px; box-shadow: rgb(0, 0, 0) 0px 2px 8px; position: absolute; visibility: hidden; max-width: 1672px; --darkreader-inline-boxshadow: #000000 0px 2px 8px;" data-darkreader-inline-boxshadow=""><input class="rename-input" type="text" aria-label="Rename input. Type new name and press Enter to commit." style="font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; background-color: rgb(60, 60, 60); color: rgb(204, 204, 204); border-width: 0px; border-style: none; --darkreader-inline-bgcolor: #2d3133; --darkreader-inline-color: #c8c3bc;" data-darkreader-inline-bgcolor="" data-darkreader-inline-color=""></div></div><div class="context-view monaco-builder-hidden" aria-hidden="true"></div></div></div>
+	<script src="./editor_files/loader.js.download"></script>
+	<script type="text/javascript">
+		require.config({
+			paths: {
+				'vs': 'vs'
+			}
+		});
+
+		var editor;
+		var Proposals = [];
+
+		var SetText;
+		var ShowMinimap;
+		var HideMinimap;
+		var EnableAutoComplete;
+		var DisableAutoComplete;
+		var GetText;
+		var AddIntellisense;
+		var Refresh;
+	
+
+
+		require(['vs/editor/editor.main'], function () {
+			function getDependencyProposals() {
+				return Proposals;
+			}
+
+			monaco.languages.registerCompletionItemProvider('lua', {
+				provideCompletionItems: function (model, position) {
+					return getDependencyProposals();
+				},
+
+			});
+
+
+			monaco.editor.defineTheme('net-theme-dark', {
+				base: 'vs-dark',
+				inherit: true,
+				colors: {
+					"editor.background": '#101010',
+				},
+				rules: [{
+						token: 'global',
+						foreground: '6699cc', // //FFFFFF
+						fontStyle: "bold"
+					},
+					{
+						token: 'keyword',
+						foreground: 'cc99cc',
+						fontStyle: "bold"
+					},
+					{
+						token: 'comment',
+						foreground: '999999'
+					},
+					{
+						token: 'number',
+						foreground: 'f99157'
+					},
+					{
+						token: 'string',
+						foreground: '99CC99'
+					},
+					{
+						token: 'Method',
+						foreground: 'ffa1dc'
+					},
+				]
+			});
+
+			editor = monaco.editor.create(document.getElementById('container'), {
+				language: 'lua',
+				theme: "net-theme-dark",
+				acceptSuggestionOnEnter: "smart",
+				suggestOnTriggerCharacters: true,
+				suggestSelection: "recentlyUsed",
+				folding: true,
+				wordBasedSuggestions : true,
+				scrollbar: {
+					verticalHasArrows: true,
+				},
+				dragAndDrop: true,
+				links: true,
+				minimap: {
+					enabled: false,
+				},
+				showFoldingControls: "always",
+				smoothScrolling: true,
+			});
+
+			EnableAutoComplete = function(){
+				editor.updateOptions({
+					suggestOnTriggerCharacters: true,
+					acceptSuggestionOnEnter : "smart",
+					wordBasedSuggestions : true
+				});
+			}
+
+			DisableAutoComplete = function(){
+				editor.updateOptions({
+					suggestOnTriggerCharacters: false,
+					acceptSuggestionOnEnter : "off",
+					wordBasedSuggestions : false
+				});
+			}
+
+			window.onresize = function () {
+				editor.layout();
+			};
+
+			ShowMinimap = function () {
+				editor.updateOptions({
+					minimap: {
+						enabled: true,
+					}
+				});
+			}
+
+			HideMinimap = function () {
+				editor.updateOptions({
+					minimap: {
+						enabled: false,
+					}
+				});
+			}
+
+
+
+			editor.onDidChangeModelContent(function (e) {
+				window.chrome.webview.postMessage(editor.getValue())
+			});
+
+			GetText = function () {
+				return editor.getValue();
+			}
+
+			SetText = function (x) {
+				editor.setValue(x);
+			}
+
+			AddIntellisense = function (l, k, d, i) {
+				var t;
+				switch (k) {
+					case "Class":
+						t = monaco.languages.CompletionItemKind.Class;
+						break;
+					case "Color":
+						t = monaco.languages.CompletionItemKind.Color;
+						break;
+					case "Constructor":
+						t = monaco.languages.CompletionItemKind.Constructor;
+						break;
+					case "Enum":
+						t = monaco.languages.CompletionItemKind.Enum;
+						break;
+					case "Field":
+						t = monaco.languages.CompletionItemKind.Field;
+						break;
+					case "File":
+						t = monaco.languages.CompletionItemKind.File;
+						break;
+					case "Folder":
+						t = monaco.languages.CompletionItemKind.Folder;
+						break;
+					case "Function":
+						t = monaco.languages.CompletionItemKind.Function;
+						break;
+					case "Interface":
+						t = monaco.languages.CompletionItemKind.Interface;
+						break;
+					case "Keyword":
+						t = monaco.languages.CompletionItemKind.Keyword;
+						break;
+					case "Method":
+						t = monaco.languages.CompletionItemKind.Method;
+						break;
+					case "Module":
+						t = monaco.languages.CompletionItemKind.Module;
+						break;
+					case "Property":
+						t = monaco.languages.CompletionItemKind.Property;
+						break;
+					case "Reference":
+						t = monaco.languages.CompletionItemKind.Reference;
+						break;
+					case "Snippet":
+						t = monaco.languages.CompletionItemKind.Snippet;
+						break;
+					case "Text":
+						t = monaco.languages.CompletionItemKind.Text;
+						break;
+					case "Unit":
+						t = monaco.languages.CompletionItemKind.Unit;
+						break;
+					case "Value":
+						t = monaco.languages.CompletionItemKind.Value;
+						break;
+					case "Variable":
+						t = monaco.languages.CompletionItemKind.Variable;
+						break;
+				}
+
+				Proposals.push({
+					label: l,
+					kind: t,
+					detail: d,
+					insertText: i
+				});
+			}
+			async function load() {
+				var docs = await(await fetch('https://raw.githubusercontent.com/iDevastate/Oxygen-v2/main/docs.txt')).json();
+
+				for (var prop in docs) {
+  					  for(var item in docs[prop])
+					  {
+						    const document = docs[prop][item];
+							AddIntellisense(document.label, document.type, document.description, document.insert);
+					  }
+				}
+
+				for (const Key of ["_G", "_VERSION", "Enum", "game", "plugin", "shared", "script", "workspace", "DebuggerManager", "elapsedTime", "LoadLibrary", "PluginManager", "settings", "tick", "time", "typeof", "UserSettings"])
+                    AddIntellisense(Key, "Keyword", Key, Key);
+
+				for (const Key of ["and", "break", "do", "else", "elseif", "end", "false", "for", "function", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"])
+                    AddIntellisense(Key, "Variable", Key, Key);
+
+                for (const Key of ["math.abs", "math.acos", "math.asin", "math.atan", "math.atan2", "math.ceil", "math.cos", "math.cosh", "math.deg", "math.exp", "math.floor", "math.fmod", "math.frexp", "math.huge", "math.ldexp", "math.log", "math.max", "math.min", "math.modf", "math.pi", "math.pow", "math.rad", "math.random", "math.randomseed", "math.sin", "math.sinh", "math.sqrt", "math.tan", "math.tanh", "table.concat", "table.foreach", "table.foreachi", "table.sort", "table.insert", "table.remove", "Color3.new", "Instance.new", "BrickColor.new", "Vector3.new", "Vector2.new", "debug.gethook", "debug.getinfo", "debug.getlocal", "debug.getmetatable", "debug.getregistry", "debug.getupvalue", "debug.getuservalue", "debug.sethook", "debug.setlocal", "debug.setmetatable", "debug.setupvalue", "debug.setuservalue", "debug.traceback", "debug.upvalueid", "debug.upvaluejoin", "string.byte", "string.char", "string.dump", "string.find", "string.format", "string.gmatch", "string.gsub", "string.len", "string.lower", "string.match", "string.rep", "string.reverse", "string.sub", "string.upper", "coroutine.create", "coroutine.resume", "coroutine.running", "coroutine.status", "coroutine.wrap", "coroutine.yield"])
+					AddIntellisense(Key, "Method", Key, Key);
+
+				for (const Key of ["Drawing", "debug", "Instance", "Color3", "Vector3", "Vector2", "BrickColor", "math", "table", "string", "coroutine", "Humanoid", "ClickDetector", "LocalScript", "Model", "ModuleScript", "Mouse", "Part", "Player", "Script", "Tool", "RunService", "UserInputService", "Workspace"])
+					AddIntellisense(Key, "Class", Key, Key);
+
+				for (const Key of ["print", "warn", "wait", "info", "printidentity", "assert", "collectgarbage", "error", "getfenv", "getmetatable", "setmetatable", "ipairs", "loadfile", "loadstring", "newproxy", "next", "pairs", "pcall", "spawn", "rawequal", "rawget", "rawset", "select", "tonumber", "tostring", "type", "unpack", "xpcall", "delay", "stats", ":Remove()", ":BreakJoints()", ":GetChildren()", ":FindFirstChild()", ":FireServer()", ":InvokeServer()", ":ClearAllChildren()", ":Clone()", ":Destroy()", ":FindFirstAncestor()", ":FindFirstAncestorOfClass()", ":FindFirstAncestorWhichIsA()", ":FindFirstChildOfClass()", ":FindFirstChildWhichIsA()", ":GetDebugId()", ":GetDescendants()", ":GetFullName()", ":IsA()", ":GetPropertyChangedSignal()", ":IsAncestorOf()", ":IsDescendantOf()", ":WaitForChild()", ":Connect()", ":AncestryChanged()", ":Changed()", ":ChildAdded()", ":ChildRemoved()", ":DescendantAdded()", ":DescendantRemoving()", ":GetService()", ":GetObjects()", ":HttpGet()", ":Wait()"])
+                    AddIntellisense(Key, "Function", Key, Key.includes(":") ? Key.substring(1, Key.length) : Key);
+
+                for (const Key of ["Visible", "Color", "Transparency", "Thickness", "From", "To", "Text", "Size", "Center", "Outline", "OutlineColor", "Position", "TextBounds", "Font", "Data", "Rounding", "NumSides", "Radius", "Filled", "PointA", "PointB", "PointC", "PointD"])
+					AddIntellisense(Key, "Property", "Property for Drawing Library", Key);
+
+			}
+			load();
+			Refresh = function () {
+				var text = GetText();
+				SetText('');
+				editor.trigger('keyboard', 'type', {
+					text: text
+				});
+			}
+		});
+	</script>
+
+
+
+<div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-status" role="status" aria-atomic="true"></div></div></body></html>
